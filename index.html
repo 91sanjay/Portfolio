@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 760px)" href="css/index-style-small.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header-wrap">
+        <div class="header-inner">
+          <img class="header-logo" src="img/city.png" alt="iconic view of a cityscape">
+          <h1 class="header-title">
+            Sanjay Rajashekhar
+          </h1>
+          <a id="menu-icon" class="header-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="nav-container">
+          <nav id="navigation" class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="">About</a></li>
+              <li class="nav-item"><a href="">Work</a></li>
+              <li class="nav-item"><a href="">Education</a></li>
+              <li class="nav-item"><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <section class="image">
+
+        </section>
+
+        <section class="work">
+          <div class="projects">
+            <ul class="project-list">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="education">
+          <div class="univ">
+            <img class="univ-logo" src="img/neu.png" alt="northeastern logo">
+            <div class="name-wrap">
+              <h1 class="univ-title">Northeastern University</h1>
+              <p class="coll-info">CCIS</p>
+              <p class="coll-info">Master's in Computer Science</p>
+              <p class="coll-info">GPA : 3.55/4.0</p>
+            </div>
+
+            <div class="courses">
+              <h1 class="course-title">Courses</h1>
+              <ul class="course-list">
+                <li class="course-item">Program Design Paradigm</li>
+                <li class="course-item">Fundamentals of Computer Networks</li>
+                <li class="course-item">Information Retrieval</li>
+                <li class="course-item">Algorithms</li>
+                <li class="course-item">Natural Language Processing</li>
+                <li class="course-item">Managing Software Development</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact">
+          <div class="contact-info">
+            <h1 class="contact-title">Contact</h1>
+            <ul class="contact-list">
+              <li class="contact-item">Email: 91sanjay@gmail.com</li>
+              <li class="contact-item">Phone: +1 (857) 756-3030</li>
+              <li class="contact-item">Facebook: https://www.facebook.com/<br/>sanjay.rajashekar1</li>
+              <li class="contact-item">LinkedIn: https://www.linkedin.com/<br/>in/sanjayrajashekhar</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu-icon');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+  </body>
+</html>
