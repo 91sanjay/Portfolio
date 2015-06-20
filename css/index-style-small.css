@@ -1,99 +1,99 @@
 .header {
 	background-color: #1e88e5;
-	min-height: 60px;
+	min-height: 70px;
 }
-
 .header-wrap {
 	display: flex;
 	flex-wrap: wrap;
 	width: 90%;
 	margin: 0 auto;
 }
-
 .header-inner {
 	width: 100%;
 }
-
 .header-logo {
   	vertical-align: top;
-  	margin-top: 12px;
-  	height: 40px;
+  	margin-top: 10px;
+  	height: 50px;
 	margin-right: 0.5em;
 }
-
 .header-title {
 	font-weight: lighter;
-  	font-size: 1.5em;
+  	font-size: 1.3em;
    	color: #fff;
-  	margin: 0.75em 0.25em;
+  	padding: 0.9em 0.15em;
   	display: inline-block;
 }
-
 .header-menu {
 	display: inline-block;
 	position: absolute;
 	right: 0;
-	padding: 1em;
+	padding: 1em 1em;
 }
-
 .nav-container {
-	width: 70%;
+	width: 100%;
 }
-
 .header-menu svg {
 	width: 32px;
 	fill: #fff;
 }
 .nav {
+	z-index: 10;
 	background-color: #fff;
 	width: 300px;
 	position: absolute;
 	/* This trasform moves the drawer off canvas. */
-	-webkitz-index: 10;
-	-transform: translate(-330px, 0);
-	transform: translate(-330px, 0);
+	-webkit-transform: translate(-330px, 10px);
+	transform: translate(-330px, 10px);
 	/* Optionally, we animate the drawer. */
 	transition: transform 0.3s ease;
+	margin-left: auto;
+  	margin-right: auto;
 }
 .nav.open {
-	-webkit-transform: translate(0, 0);
-	transform: translate(-30px, 0);
+	-webkit-transform: translate(-30px, 10px);
+	transform: translate(-30px, 10px);
+}
+.nav-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 .nav-item {
 	display: list-item;
 	border-bottom: 1px solid #E0E0E0;
 	width: 100%;
 	text-align: left;
+	line-height: 24px;
+	padding: 24px;
 }
-
 .nav a {
 	text-decoration: none;
 	color: #616161;
 	padding: 1.5em;
+	text-transform: uppercase;
 }
-
 .nav a:hover {
 	text-decoration: underline;
 	color: #212121;
 }
-
 .container {
 	width: 90%;
 	margin: 0 auto;
 }
-
 .image {
 	height: 300px;
 	background-color: #eee;
 }
-
 .work {
 	height: 300px;
 	background-color: #eef;
 }
-
 .univ {
 	padding: 40px 0 40px 0;
+}
+.section-title {
+	margin-bottom: 2em;
 }
 .univ-logo {
 	width: 80px;
@@ -111,42 +111,61 @@
 	font-size: 1.1em;
 	margin-bottom: 5px;
 }
+.edu {
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	border-bottom: 3px solid #E040FB;
+	padding-bottom: 3px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
 .coll-info {
 	font-size: 0.9em;
 	margin-bottom: 3px;
 	vertical-align: top;
 }
-
 .courses {
-	padding: 20px;
+	padding: 15px;
 }
-
 .course-title {
 	font-size: 1.1em;
 	margin-bottom: 5px;
 }
-
 .course-list {
 	list-style-type: circle;
 }
-
 .course-item {
 	margin: 0.7em .3em;
 }
-
+.cntct {
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	border-bottom: 3px solid #80D8FF;
+	padding-bottom: 3px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+.contact-list {
+	margin-bottom: 2em;
+}
 .contact-info {
 	margin: 0 0.25em 0.25em 0.45em;
 }
-
-.contact-title {
-	font-size: 1.1em;
-	margin-bottom: 5px;
-}
-
 .contact-item {
 	margin: 0.7em .3em;
 }
-
-.contact:after {
-	margin-bottom: 1em;
+.connect {
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0 auto;
+	width: 90%;
+}
+.social {
+	display: inline-block;
+	margin: 0.2em 0.2em;
+}
+.social img {
+	z-index: 10;
 }
