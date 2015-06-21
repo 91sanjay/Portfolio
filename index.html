@@ -6,104 +6,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 760px)" href="css/index-style-small.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 400px)" href="css/index-style-small.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:401px) and (max-width: 768px)" href="css/index-style-medium.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:769px)" href="css/index-style-large.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.3.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
   </head>
   <body>
-
-    <header class="header">
-      <div class="header-wrap">
-        <div class="header-inner">
-          <img class="header-logo" src="img/sanjay.png" alt="iconic view of a cityscape">
-          <h1 class="header-title">
-            Sanjay Rajashekhar
-          </h1>
-          <a id="menu-icon" class="header-menu">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-            </svg>
-          </a>
-        </div>
-
-        <div class="nav-container">
-          <nav id="navigation" class="nav">
-            <ul class="nav-list">
-              <li class="nav-item"><a href="">About</a></li>
-              <li class="nav-item"><a href="">Work</a></li>
-              <li class="nav-item"><a href="">Education</a></li>
-              <li class="nav-item"><a href="">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="container">
-        <section class="image">
-
-        </section>
-
-        <section class="work">
-          <div class="projects">
-            <ul class="project-list">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+    <div class="grid">
+      <header class="header">
+        <div class="header-wrap">
+          <div class="header-inner">
+            <img class="header-logo" src="img/sanjay.png" alt="iconic view of a cityscape">
+            <h1 class="header-title">
+              Sanjay Rajashekhar
+            </h1>
+            <a id="menu-icon" class="header-menu">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+              </svg>
+            </a>
           </div>
-        </section>
 
-        <section class="education">
-          <div class="univ">
-            <div class="section-title"><h1 class="edu">Education</h1></div>
-            <img class="univ-logo" src="img/neu.png" alt="northeastern logo">
-            <div class="name-wrap">
-              <h1 class="univ-title">Northeastern University</h1>
-              <p class="coll-info">CCIS</p>
-              <p class="coll-info">Master's in Computer Science</p>
-              <p class="coll-info">GPA : 3.55/4.0</p>
-            </div>
+          <div class="nav-container">
+            <nav id="navigation" class="nav">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="">About</a></li>
+                <li class="nav-item"><a href="">Work</a></li>
+                <li class="nav-item"><a href="">Education</a></li>
+                <li class="nav-item"><a href="">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
 
-            <div class="courses">
-              <h1 class="course-title">Courses</h1>
-              <ul class="course-list">
-                <li class="course-item">Program Design Paradigm</li>
-                <li class="course-item">Fundamentals of Computer Networks</li>
-                <li class="course-item">Information Retrieval</li>
-                <li class="course-item">Algorithms</li>
-                <li class="course-item">Natural Language Processing</li>
-                <li class="course-item">Managing Software Development</li>
+      <main class="main">
+        <div class="container">
+          <section class="image">
+
+          </section>
+
+          <section class="work">
+            <div class="projects">
+              <div class="section-title"><h1 class="pro">Featured Work</h1></div>
+              <ul class="project-list">
+                <li class="project-item torrent">
+                  <i class="fa fa-download project-icon"></i>
+                  <p class="project-name">Cheating Bittorrent client</p>
+                </li>
+                <li class="project-item search">
+                  <i class="fa fa-search project-icon"></i>
+                  <p class="project-name">Simple Search <br>Engine</p>
+                </li>
+                <li class="project-item crawler">
+                  <i class="fa fa-bug project-icon"></i>
+                  <p class="project-name">Web Crawler <br> Using BFS</p>
+                </li>
               </ul>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="contact">
-          <div class="contact-info">
-            <div class="section-title"><h1 class="cntct">Contact</h1></div>
-            <ul class="contact-list">
-              <li class="contact-item">Email: 91sanjay@gmail.com</li>
-              <li class="contact-item">Phone: +1 (857) 756-3030</li>
-              <!-- <li class="contact-item">Facebook: https://www.facebook.com/<br/>sanjay.rajashekar1</li>
-              <li class="contact-item">LinkedIn: https://www.linkedin.com/<br/>in/sanjayrajashekhar</li> -->
-            </ul>
-          </div>
-        </section>
-      </section>
-    </main>
+          <section class="education">
+            <div class="univ">
+              <div class="section-title"><h1 class="edu">Education</h1></div>
+              <img class="univ-logo" src="img/neu.png" alt="northeastern logo">
+              <div class="name-wrap">
+                <h1 class="univ-title">Northeastern University</h1>
+                <p class="coll-info">CCIS</p>
+                <p class="coll-info">Master's in Computer Science</p>
+                <p class="coll-info">GPA : 3.55/4.0</p>
+              </div>
+
+              <div class="courses">
+                <h1 class="course-title">Courses</h1>
+                <ul class="course-list">
+                  <li class="course-item">Program Design Paradigm</li>
+                  <li class="course-item">Fundamentals of Computer Networks</li>
+                  <li class="course-item">Information Retrieval</li>
+                  <li class="course-item">Algorithms</li>
+                  <li class="course-item">Natural Language Processing</li>
+                  <li class="course-item">Managing Software Development</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="contact">
+            <div class="contact-info">
+              <div class="section-title"><h1 class="cntct">Contact</h1></div>
+              <ul class="contact-list">
+                <li class="contact-item">Email: 91sanjay@gmail.com</li>
+                <li class="contact-item">Phone: +1 (857) 756-3030</li>
+                <!-- <li class="contact-item">Facebook: https://www.facebook.com/<br/>sanjay.rajashekar1</li>
+                <li class="contact-item">LinkedIn: https://www.linkedin.com/<br/>in/sanjayrajashekhar</li> -->
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+
     <footer>
       <div class="connect-wrap">
-        <ul class="connect">
+        <!-- <ul class="connect">
           <li class="fb social"><a href=""><img src="img/fb-small.svg"></a></li>
           <li class="lnkIn social"><a href=""><img src="img/linkedIn-small.svg"></a></li>
           <li class="gplus social"><a href=""><img src="img/gplus-small.svg"></a></li>
           <li class="ghub social"><a href=""><img src="img/github-small.svg"></a></li>
-        </ul>
+        </ul> -->
+        <div class="connect">
+          <i class="fa fa-linkedin"><a href="https://www.linkedin.com/<br/>in/sanjayrajashekhar"></a></i>
+        </div>
       </div>
     </footer>
+    </div>
     <script>
       /*
        * Open the drawer when the menu ison is clicked.

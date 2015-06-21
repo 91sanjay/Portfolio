@@ -3,12 +3,13 @@
 	flex-wrap: wrap;
 }
 .header {
+	order: 0;
 	background-color: #1e88e5;
-	min-height: 70px;
+	min-height: 90px;
 	width: 100%;
 }
 .header-wrap {
-	width: 90%;
+	width: 85%;
 	margin: 0 auto;
 }
 .header-inner {
@@ -17,45 +18,45 @@
 .header-logo {
   	vertical-align: top;
   	margin-top: 10px;
-  	height: 50px;
+  	height: 70px;
 	margin-right: 0.5em;
 }
 .header-title {
 	font-weight: lighter;
-  	font-size: 1.3em;
+  	font-size: 1.8em;
    	color: #fff;
-  	padding: 0.9em 0.15em;
+  	padding: 0.9em 0.25em;
   	display: inline-block;
 }
 .header-menu {
 	display: inline-block;
 	position: absolute;
-	right: 1.4em;
+	right: 2em;
 	top: 1.1em;
 }
 .nav-container {
 	width: 100%;
 }
 .header-menu svg {
-	width: 32px;
+	width: 42px;
 	fill: #fff;
 }
 .nav {
 	z-index: 10;
 	background-color: #fff;
-	width: 300px;
+	width: 500px;
 	position: absolute;
 	/* This trasform moves the drawer off canvas. */
-	-webkit-transform: translate(-330px, 10px);
-	transform: translate(-330px, 10px);
+	-webkit-transform: translate(-560px, 10px);
+	transform: translate(-560px, 10px);
 	/* Optionally, we animate the drawer. */
 	transition: transform 0.3s ease;
 	margin-left: auto;
   	margin-right: auto;
 }
 .nav.open {
-	-webkit-transform: translate(-30px, 10px);
-	transform: translate(-30px, 10px);
+	-webkit-transform: translate(-60px, 10px);
+	transform: translate(-60px, 10px);
 }
 .nav-list {
   width: 100%;
@@ -68,13 +69,13 @@
 	width: 100%;
 	text-align: left;
 	line-height: 24px;
-	padding: 24px;
+	padding: 32px;
 }
 .nav a {
 	text-decoration: none;
 	color: #616161;
-	padding: 1.5em;
 	text-transform: uppercase;
+	font-size: 1.5em;
 }
 .nav a:hover {
 	text-decoration: underline;
@@ -84,26 +85,39 @@
 	width: 100%;
 }
 .container {
-	width: 90%;
+	width: 85%;
 	margin: 0 auto;
 }
 .image {
-	height: 300px;
+	width: 100%;
+	height: 500px;
 	background-color: #eee;
 }
 .work {
-	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	height: 500px;
 	background-color: #eef;
 }
+.project {
+	display: flex;
+	flex-wrap: wrap;
+}
+.project-list {
+	width: 33.33333%;
+}
+
+
+
 .univ {
-	padding: 40px 0 40px 0;
+	padding: 60px 0 30px 0;
 }
 .section-title {
 	margin-bottom: 2em;
 }
 .univ-logo {
-	width: 80px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
 	border: 3px solid #757575;
 	border-radius: 50%;
 	vertical-align: middle;
@@ -111,62 +125,66 @@
 .name-wrap {
 	display: inline-block;
 	vertical-align: top;
-	margin: 0.2em 0.25em 0.35em 0.45em;
+	margin: 0.6em 0.25em 0.35em 1em;
 }
 .univ-title {
-	font-size: 1.1em;
+	font-size: 1.4em;
 	margin-bottom: 5px;
 }
 .edu {
 	display: inline-block;
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
-	border-bottom: 3px solid #E040FB;
-	padding-bottom: 3px;
-	font-size: 1.2em;
+	border-bottom: 5px solid #E040FB;
+	padding-bottom: 5px;
+	font-size: 1.4em;
 	text-transform: uppercase;
 }
 .coll-info {
-	font-size: 0.9em;
+	font-size: 1.2em;
 	margin-bottom: 3px;
 	vertical-align: top;
 }
 .courses {
-	padding: 15px;
+	padding: 30px 20px;
 }
 .course-title {
-	font-size: 1.1em;
+	font-size: 1.2em;
 	margin-bottom: 5px;
 }
 .course-list {
 	list-style-type: circle;
 }
 .course-item {
-	margin: 0.7em .3em;
+	margin: 0.9em .3em;
+	font-size: 1.1em;
 }
 .cntct {
 	display: inline-block;
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
-	border-bottom: 3px solid #80D8FF;
-	padding-bottom: 3px;
-	font-size: 1.2em;
+	border-bottom: 5px solid #80D8FF;
+	padding-bottom: 5px;
+	font-size: 1.4em;
 	text-transform: uppercase;
 }
 .contact-list {
-	margin-bottom: 2em;
+	margin-bottom: 4em;
 }
 .contact-info {
 	margin: 0 0.25em 0.25em 0.45em;
 }
 .contact-item {
-	margin: 0.7em .3em;
+	margin: 0.9em .3em;
+	font-size: 1.1em;
+}
+.connect-wrap {
+	width: 85%;
+	margin: 0 auto;
 }
 .connect {
-	list-style-type: none;
-	text-decoration: none;
-	margin: 0 auto;
-	width: 90%;
+	order: 3;
+	margin: 2em 5em;
 }
 .social {
 	display: inline-block;
@@ -175,14 +193,19 @@
 .social img {
 	z-index: 10;
 }
-
-.fa:hover {
-	color: blue;
-}
-.fa-linkedin {
-	margin: 1em;
-	font-size: 12em;
+.fa {
+	background-color: #eee;
+	border-radius: 55%;
+	padding: 0.7em 0.7em;
+	font-size: 2em !important;
 }
 .fa-linkedin:hover{
-	color: blue;
+	background-color: #1b86bc;
+	color: #fff;
+}
+@media screen and (max-width: 480px) {
+	.header-title {
+		font-size: 1.5em;
+		padding: 1.2em 0.25em;
+	}
 }
