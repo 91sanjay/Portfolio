@@ -349,6 +349,8 @@ footer {
 	color: #fff;
 }
 
+/* Slight modifications to layout/size to respond gracefully to change in viewport */
+
 @media screen and (max-width: 480px) {
 	.header-title {
 		font-size: 1.5em;

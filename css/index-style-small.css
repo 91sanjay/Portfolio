@@ -363,6 +363,8 @@ footer {
 	color: #fff;
 }
 
+/* Slight modifications to layout/size to respond gracefully to change in viewport */
+
 @media screen and (max-width: 370px) {
 	.social {
 		width: 80%;
